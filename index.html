@@ -27,8 +27,9 @@ class: center, middle
 
 # Agenda
 
-1. RxJs Introduction
-2. How it looks like? 
+0. RxJs Introduction
+1. How it looks like?
+2. RxJs Subscription
 3. Promise Vs Observable
 4. Observable Events
 5. Stream Vs Array Processing
@@ -58,9 +59,9 @@ source.filter(x => x % 2 === 1)
 ```
 ---
 
-# RxJS subscription
+# RxJS Subscription
+Subscribe to observable object.
 ```javascript
-
 var source = Rx.Observable.create(function(observer) {
   var id = setTimeout(function() {
     try {
