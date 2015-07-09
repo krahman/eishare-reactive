@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>Intro To RxJs</title>
     <meta charset="utf-8">
     <style>
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -115,7 +115,7 @@ promise.then(x => console.log(x));
 ```
 ---
 
-# Promise Is Lazy
+# Observable Is Lazy
 It gets executed only whenever called.
 ```javascript
 var source = Rx.Observable.create((observer) => {
@@ -190,7 +190,7 @@ console.log(source)
 ---
 # Observable stream Vs Array processing
 
-### Observable with stream processing 
+### Observable object with stream processing 
 ```javascript
 
 var source = Rx.Observable.fromArray([0,1,2,3,4,5]);
@@ -215,6 +215,7 @@ source.filter((x) => {
 
 # Discussion
 Thank you!
+
 ---
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
